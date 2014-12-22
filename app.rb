@@ -1,6 +1,12 @@
-require 'sinatra'
+#!/usr/bin/env ruby
 
-get '/cipher_table' do
-  erb :cipher_table
+class App < Sinatra::Base
+  get '/' do
+    ""
+  end
+
+  get '/cipher_table' do
+    erb :cipher_table
+  end
 end
 

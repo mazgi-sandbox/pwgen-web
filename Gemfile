@@ -1,12 +1,15 @@
 # A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-ruby "2.1.5"
+ruby '2.1.5'
 
-gem "sinatra"
+gem 'sinatra'
+gem 'thin'
 
 group :development, :test do
-  gem "shotgun"
-  gem "rack-test"
-  gem "turn"
+  gem 'shotgun'
+  gem 'rspec'
+  gem 'rack-test', :require => 'rack/test'
+  gem 'simplecov', :require => false
 end
+
