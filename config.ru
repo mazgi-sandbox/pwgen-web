@@ -1,2 +1,2 @@
 require "./app"
-run Portfolio::App
+run Sinatra::Application
