@@ -12,3 +12,9 @@ test:
   post:
     - bundle exec rake test
 
+deployment:
+  production:
+    branch: master
+      heroku:
+        appname: passwdgen
+
