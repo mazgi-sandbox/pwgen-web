@@ -9,4 +9,6 @@ dependencies:
         timeout: 180
 
 test:
+  post:
+    - bundle exec rake test
 
