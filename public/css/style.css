@@ -1,0 +1,47 @@
+table.cipher_table {
+  border-spacing: 0;
+  border: solid 1px #ddd;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px #ddd;
+  font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+}
+table.cipher_table th,
+table.cipher_table td {
+  border-right: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+}
+table.cipher_table th {
+  /* border: solid 1px #f00; */
+  text-align: center;
+  background: #84a2d4;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+}
+table.cipher_table th.col {
+  width: 4em;
+  padding: 4px;
+}
+table.cipher_table th.row {
+  width: 2em;
+}
+table.cipher_table td {
+  /* border: solid 1px #0f0; */
+  padding: 8px;
+  text-align: center;
+}
+table.cipher_table tr:first-child th:first-child,
+table.cipher_table tr:first-child td:first-child {
+  border-radius: 6px 0 0 0;
+}
+table.cipher_table tr:first-child th:last-child,
+table.cipher_table tr:first-child td:last-child {
+  border-radius: 0 6px 0 0;
+}
+table.cipher_table tr:last-child th:first-child,
+table.cipher_table tr:last-child td:first-child {
+  border-radius: 0 0 0 6px;
+}
+table.cipher_table tr:last-child th:last-child,
+table.cipher_table tr:last-child td:last-child {
+  border-radius: 0 0 6px 0;
+}
+
