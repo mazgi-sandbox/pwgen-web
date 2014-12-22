@@ -1,8 +1,10 @@
 require 'simplecov'
-SimpleCov.start
-
 require 'coveralls'
-Coveralls.wear!
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+SimpleCov.start
 
 ENV['RACK_ENV'] = 'test'
 
