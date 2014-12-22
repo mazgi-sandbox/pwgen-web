@@ -1,0 +1,12 @@
+machine:
+  ruby:
+    version:
+      2.0.0
+
+dependencies:
+  override:
+    - bundle install:
+        timeout: 180
+
+test:
+
